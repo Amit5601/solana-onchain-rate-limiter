@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /mnt/c/Progra~1/nodejs/node.exe C:/Progra~1/nodejs/node_modules/npm/bin/npx-cli.js "$@"
