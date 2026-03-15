@@ -1,8 +1,10 @@
 # Solana Rate Limiter
 
-This project is a simple on-chain rate limiter built with Anchor on Solana.
+This project demonstrates how a traditional Web2 backend rate limiter can be rebuilt as an on-chain Solana program using Anchor.
 
-It recreates a common Web2 pattern, where request quotas are tracked in backend state, but stores the limiter state in a Solana account instead of Redis.
+Instead of storing request counters in centralized infrastructure like Redis, the limiter state is stored in a Solana account and enforced directly by program logic.
+
+This project was built as part of the **“Rebuild Backend Systems as On-Chain Rust Programs”** challenge.
 
 ## 1. Problem: API Rate Limiting in Web2
 
@@ -133,6 +135,20 @@ Observed result:
 - the third `check-request` call failed with `RateLimitExceeded`
 - this confirmed the on-chain fixed-window limiter behavior
 
+## Tradeoffs vs Web2
+
+Compared to a traditional backend rate limiter, the on-chain model has several differences:
+
+Advantages:
+- state is transparent and verifiable
+- rate limiting rules cannot be modified by a centralized backend
+- other programs can compose with the limiter
+
+Tradeoffs:
+- transactions are slower than in-memory counters
+- each request requires a blockchain transaction
+- account storage costs rent
+
 ## 8. How To Run The Project Locally
 
 ### Prerequisites
@@ -197,6 +213,9 @@ ts-node client/cli.ts check-request
 
 ## Summary
 
-This project demonstrates how a traditional backend rate limiter can be modeled on Solana using program-owned accounts and fixed-window quota logic.
+This project demonstrates how a common Web2 backend pattern—API rate limiting—can be implemented as a Solana program.
 
-Instead of `Client -> API -> Redis`, the system becomes `Client -> Solana program -> RateLimitAccount`, with quota enforcement happening on chain.
+Instead of storing counters in Redis and enforcing quotas in API middleware, the rate limiting state is stored in a program-owned account and enforced directly by on-chain logic.
+
+This shows how traditional backend infrastructure patterns can be translated into Solana’s distributed state machine model.
+
