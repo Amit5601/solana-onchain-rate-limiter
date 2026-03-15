@@ -123,12 +123,12 @@ Explorer:
 ## 7. Devnet Transaction Links
 
 Deployment:
-- [Deploy / upgrade transaction](https://explorer.solana.com/tx/Sg4G6Tjred7jtknP1UZg9iuoEs38pmk3R4kCXScGWFzLb8JWF7P5eazR5jmFXQHcQKsYpknejWk97d9Dj9hmDww?cluster=devnet)
+- https://explorer.solana.com/tx/Sg4G6Tjred7jtknP1UZg9iuoEs38pmk3R4kCXScGWFzLb8JWF7P5eazR5jmFXQHcQKsYpknejWk97d9Dj9hmDww?cluster=devnet
 
 CLI test transactions:
-- [Initialize limiter](https://explorer.solana.com/tx/5dMeHeycJkUXxSK4C3Rdnsu724V5ZJyhcntjJ6jvaw2aEjetdibBYUZewdzTLicLNjHvbhMM2L8TgzAfYa9ivyoY?cluster=devnet)
-- [Check request #1](https://explorer.solana.com/tx/3ASLhSaDcShocbbEzLMJGFeZPpf7AFwB2bFUU7WK3obUHhNFfF8zcDkP3o1npgNmXf8ZSxkdmWKaetMssjVeXmbf?cluster=devnet)
-- [Check request #2](https://explorer.solana.com/tx/48CWG8kWDKKdboBX5DSAimDVAWmFFNPqRjGRAVukcBp7tHEKA38c2VTz9KK6a7KyVkkkY2XbcADw2WwDGJ6hwRps?cluster=devnet)
+- Initialize limiter:- https://explorer.solana.com/tx/5dMeHeycJkUXxSK4C3Rdnsu724V5ZJyhcntjJ6jvaw2aEjetdibBYUZewdzTLicLNjHvbhMM2L8TgzAfYa9ivyoY?cluster=devnet
+- check request #1:- https://explorer.solana.com/tx/3ASLhSaDcShocbbEzLMJGFeZPpf7AFwB2bFUU7WK3obUHhNFfF8zcDkP3o1npgNmXf8ZSxkdmWKaetMssjVeXmbf?cluster=devnet
+- check request #2:- https://explorer.solana.com/tx/48CWG8kWDKKdboBX5DSAimDVAWmFFNPqRjGRAVukcBp7tHEKA38c2VTz9KK6a7KyVkkkY2XbcADw2WwDGJ6hwRps?cluster=devnet
 
 Observed result:
 - the first two `check-request` calls succeeded
