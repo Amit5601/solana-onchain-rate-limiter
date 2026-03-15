@@ -118,7 +118,7 @@ Submitted Devnet program:
 - `88JwScoavVyiG2KCQt1tewbM7yrBJ8LN7cuKjebDmyLN`
 
 Explorer:
-- [Program on Devnet](https://explorer.solana.com/address/88JwScoavVyiG2KCQt1tewbM7yrBJ8LN7cuKjebDmyLN?cluster=devnet)
+(https://explorer.solana.com/address/88JwScoavVyiG2KCQt1tewbM7yrBJ8LN7cuKjebDmyLN?cluster=devnet)
 
 ## 7. Devnet Transaction Links
 
