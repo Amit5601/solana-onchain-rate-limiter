@@ -1,10 +1,16 @@
 # Solana Rate Limiter
 
-This project demonstrates how a traditional Web2 backend rate limiter can be rebuilt as an on-chain Solana program using Anchor.
+This repository is an engineering exploration into translating traditional Web2 infrastructure into non-EVM decentralized environments. It demonstrates how a backend rate limiter can be rebuilt as a high-performance on-chain Solana program using the Anchor framework.
 
-Instead of storing request counters in centralized infrastructure like Redis, the limiter state is stored in a Solana account and enforced directly by program logic.
+Instead of relying on centralized in-memory datastores (like Redis), this implementation forces the limiter state into a Solana account, requiring precise management of Program Derived Addresses (PDAs), state serialization, and compute unit constraints.
 
-This project was built as part of the **“Rebuild Backend Systems as On-Chain Rust Programs”** challenge.
+Technical Focus:
+
+Translating Web2 logic to Web3 execution environments.
+
+Anchor framework account management and state mutation.
+
+Handling Solana-specific resource and compute constraints.
 
 ## 1. Problem: API Rate Limiting in Web2
 
